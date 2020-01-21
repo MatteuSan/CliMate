@@ -1,0 +1,14 @@
+@media (min-width: 700px){
+    
+    .kitWrap {
+        width: calc(35% - 10px);
+        margin-right: 10px;
+        float: left;
+    }
+    
+    .mainContent {
+        width: 65%;
+        float: right;
+    }
+
+}

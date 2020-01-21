@@ -1,0 +1,340 @@
+@charset "utf-8";
+/* CliMate UI v. 1
+Made by: The CliMate Team
+Copyright 2020 */
+
+/* Font LIBs */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,400i,700,800');
+@font-face{font-family: HelveticaNeue Light; src: url(../../assets/helveticaneue/HelveticaNeue.TTF)}
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    color: #011b0c!important;
+}
+
+*::placeholder {
+    color: #3e3e3e
+}
+
+body {
+	background-color: #f1f1f1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+
+html,
+body {
+    width: 100%;
+    height: auto
+}
+
+a {
+    text-decoration: none;
+    display: inline;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: normal;
+}
+
+h4,
+h5,
+h6,
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+}
+
+.contentWrap {
+    width: calc(100% - 30px);
+	max-width: 950px;
+    margin: 0 auto;
+    overflow-x: hidden;
+    background-color: rgba(0,0,0,0.00);
+    margin-top: 77px;
+    margin-bottom: 100px;
+    height: calc(100% - 150px);
+    padding: 5px;
+}
+
+.hidden {
+	color: transparent!important;
+	background-color: transparent!important;
+	display: none!important;
+	font-size: 0;
+}
+
+/* HEADER */
+
+header {
+    width: calc(100% - 30px);
+    padding: 10px 15px;
+    background-color: #80AF89;
+    position: fixed;
+    top: 0;
+    height: 45px;
+}
+
+.headerText {
+    color: #130A02!important;
+    font-weight: bold;
+    font-size: 40px;
+    width: 70px;
+    left: 15px;
+    position: absolute
+}
+
+/* NAVBAR AND ICON SETS */
+
+.navBar-b {
+    background-color: #598527;
+    width: calc(100% - 14px);
+    position: fixed;
+    bottom: 0;
+    padding: 7px;
+    height: 70px;
+}
+
+.navCont {
+    width: 290px;
+    margin: 0 auto;
+}
+
+.side-1,
+.side-2 {
+    width: 120px;
+    padding: 5px;
+    display: inline;
+    color: #011b0c;
+    border: none;
+    margin-top: 13px;
+}
+
+.side-1 {
+    float: left;
+    text-align: left;
+    margin-right: 5px;
+}
+
+.side-2 {
+    float: right;
+    text-align: right;
+    margin-left: 5px;
+}
+
+.side-1 a,
+.side-2 a {
+    margin: 0 5px;
+    color: #011b0c;
+    font-size: 35px;
+    display: inline-table;
+}
+
+.side-1 a:hover,
+.side-2 a:hover{
+    color: #00421C!important;
+}
+
+.side-1 a:active,
+.side-2 a:active{
+    color: #091B11!important;
+}
+
+.homeFab {
+    background-color: #033719;
+    width: 65px;
+    height: 65px;
+    padding: 7px;
+    margin: 0 auto;
+    border-radius: 50%;
+    text-align: center;
+    border: none;
+    position: absolute;
+    bottom: 10px;
+    left: calc(50% - 32px);
+}
+
+.homeFab:hover {
+    background-color: #022511!important;
+    cursor: pointer!important;
+}
+
+.homeFab:active {
+    background-color: #114527!important;
+    cursor: pointer!important;
+}
+
+.homeImg {
+    height: 50px;
+    width: auto;
+    display: inline
+}
+
+#logout {
+    position: absolute;
+    right: 15px;
+    top: 7px;
+}
+
+/* BASICALLY EVERYTHONK */
+
+.titleBar {
+    font-size: 25px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    background-color: #C8C8C8;
+    margin-bottom: 7px;
+    padding: 7px;
+    border-radius: 5px;
+    width: calc(100% - 14px);
+}
+
+.blockDesc {
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #DFDFDF;
+    padding: 7px;
+    width: calc(100% - 14px);
+    border-radius: 5px;
+    text-align: justify;
+}
+
+/* UPLOAD.PHP */
+
+.formBox {
+    background-color: #8FC98D;
+    padding: 10px;
+    border-radius: 5px;
+    width: calc(290px - 20px);
+}
+
+input[type=text] {
+    width: calc(100% - 14px);
+    max-width: 250px;
+    padding: 7px;
+    border: none;
+    background-color: #B4DBBA;
+    border-bottom: 2px solid #637C67;
+    margin-bottom: 7px;
+    color: #133317!important;
+}
+
+input[type=text]:hover{
+    cursor: text;
+}
+
+button[type=submit] {
+    width: 100px;
+    padding: 7px;
+    border: none;
+    background-color: #785932;
+    margin-top: 10px;
+    border-radius: 5px;
+    color: #f1f1f1!important;
+}
+
+button[type=submit]:hover {
+    background-color: #9A7E5C;
+    cursor: pointer;
+}
+
+button[type=submit]:active {
+    background-color: #55412A;
+    cursor: pointer;
+}
+
+/* HOME.PHP */
+
+.kitBlock {
+    background-color: #DFDFDF;
+    padding: 10px;
+    width: calc(100% - 20px);
+    border-radius: 5px;
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+.blockImg {
+    width: 100%;
+    height: auto;
+}
+
+.blockTitle {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
+
+.price {
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    margin-bottom: 7px;
+}
+
+.welcome {
+    color: #F1F1F1!important;
+    background-color: #56C354;
+    border-radius: 5px;
+    padding: 7px;
+    width: calc(100% - 14px);
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+/* TASKS */
+
+.taskBox {
+    background-color: #DFDFDF;
+    padding: 10px;
+    width: calc(100% - 20px);
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.taskName {
+    font-size: 24px;
+    font-weight: 700!important;
+    margin-right: 10px;
+    width: 100%;
+}
+
+.taskDesc,
+.taskDate,
+.taskPoints {
+    font-size: 14px!important;
+    text-align: justify;
+}
+
+.taskDate {color: #7B7B7B!important}
+
+.taskPoints {font-weight: 700!important}
+
+.taskCheck {
+    float: right;
+	display: inline-block;
+    border: none;
+    background-color: rgba(0,0,0,0.00);
+    font-size: 30px!important;
+    padding: 0!important;
+    margin: 0!important;
+}
+
+/* MODIFIERS */
+
+.w-100 {
+    width: 100%!important;
+    font-size: 18px;
+}
+
+hr {
+    margin-top: 7px;
+    margin-bottom: 7px;
+}

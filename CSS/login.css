@@ -1,0 +1,112 @@
+@charset "utf-8";
+/* LOGIN CSS */
+
+/* Font LIBs */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+@font-face{font-family: HelveticaNeue Light; src: url(../../assets/helveticaneue/HelveticaNeue.TTF)}
+
+.error {
+    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif"!important;
+    font-size: 12px!important;
+    color: #C80003!important;
+    margin-bottom: 7px!important;
+}
+
+.contentWrap {
+    width: calc(100% - 20px);
+	max-width: 300px;
+    margin: 0 auto;
+    overflow-x: hidden;
+    background-color: rgba(0,0,0,0.00);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+body {
+    background-color: #142716;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    padding: 10px;
+}
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    color: #133317!important;
+}
+
+*::placeholder {
+    color: #3e3e3e
+}
+
+.loginCont {
+    background-color: #73AD6F;
+    width: calc(100% - 50px);
+    max-width: 300px;
+    padding: 20px;
+    border-radius: 7px;
+    margin-top: 90px;
+    margin-bottom: 15px;
+}
+
+h2 {
+    margin: 10px 0;
+    font-family: HelveticaNeue;
+    font-size: 30px;
+    color: #f1f1f1!important;
+}
+
+p, a {
+    color: #133317;
+    font-size: 12px;
+    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif"
+}
+
+#loginImg img {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+input[type=text],
+input[type=password],
+input{
+    width: calc(100% - 14px);
+    max-width: 250px;
+    padding: 7px;
+    border: none;
+    background-color: #B4DBBA;
+    border-bottom: 2px solid #637C67;
+    margin-bottom: 7px;
+    color: #133317!important;
+}
+
+input[type=text]:hover,
+input[type=password]:hover,
+input:hover{
+    cursor: text;
+}
+
+button[type=submit] {
+    width: 100px;
+    padding: 7px;
+    border: none;
+    background-color: #785932;
+    margin-top: 10px;
+    border-radius: 5px;
+    color: #f1f1f1!important;
+}
+
+button[type=submit]:hover {
+    background-color: #9A7E5C;
+    cursor: pointer;
+}
+
+button[type=submit]:active {
+    background-color: #55412A;
+    cursor: pointer;
+}
